@@ -30,7 +30,9 @@ module.exports = {
   lintOnSave: process.env.NODE_ENV === "development",
   productionSourceMap: false,
   devServer: {
-    disableHostCheck: true,
+    // disableHostCheck: true,
+    host: '0.0.0.0',
+    allowedHosts: ['localhost', '.gitpod.io'],
     port: port,
     open: true,
     overlay: {
