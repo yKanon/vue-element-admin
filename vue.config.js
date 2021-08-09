@@ -32,7 +32,7 @@ module.exports = {
   devServer: {
     // disableHostCheck: true,
     host: '0.0.0.0',
-    allowedHosts: ['localhost', '.gitpod.io'],
+    allowedHosts: ['localhost', '.gitpod.io', 'replit.com'],
     port: port,
     open: true,
     overlay: {
